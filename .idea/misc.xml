@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Anna/AndroidStudioProjects/FeedTheCat/app/src/main/res/layout/activity_main.xml" value="0.11041666666666666" />
+        <entry key="..\:/Users/Anna/AndroidStudioProjects/FeedTheCat/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.1615" />
+        <entry key="..\:/Users/Anna/AndroidStudioProjects/FeedTheCat/app/src/main/res/layout/activity_about.xml" value="0.144" />
+        <entry key="..\:/Users/Anna/AndroidStudioProjects/FeedTheCat/app/src/main/res/layout/activity_main.xml" value="0.1334853090172239" />
+        <entry key="..\:/Users/Anna/AndroidStudioProjects/FeedTheCat/app/src/main/res/layout/activity_menu.xml" value="0.176" />
+        <entry key="..\:/Users/Anna/AndroidStudioProjects/FeedTheCat/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
       </map>
     </option>
   </component>
