@@ -46,13 +46,13 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/progressbar"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="760dp"
+        android:layout_marginTop="472dp"
         android:text="Loading Complete"
         android:textSize="24sp"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-   </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

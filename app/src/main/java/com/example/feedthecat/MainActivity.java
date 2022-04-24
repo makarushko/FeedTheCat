@@ -1,4 +1,5 @@
 package com.example.feedthecat;
+
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Handler;
@@ -6,15 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-
 import androidx.appcompat.app.AppCompatActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     private ProgressBar mProgressBar;
     private TextView mLoadingText;
-
     private int mProgressStatus = 0;
-
     private final Handler mHandler = new Handler();
 
     @Override

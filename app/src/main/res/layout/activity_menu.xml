@@ -18,18 +18,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/rules"
-        android:layout_width="167dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="396dp"
-        android:onClick="rulesPressed"
-        android:text="Rules"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
         android:id="@+id/results"
         android:layout_width="167dp"
         android:layout_height="56dp"
@@ -45,11 +33,11 @@
         android:id="@+id/exit"
         android:layout_width="167dp"
         android:layout_height="56dp"
-        android:layout_marginTop="488dp"
+        android:layout_marginTop="408dp"
         android:onClick="exitPressed"
         android:text="Exit"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

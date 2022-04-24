@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.feedthecat">
 
     <application
@@ -14,7 +13,6 @@
             android:name=".MainActivity"
             android:screenOrientation="fullSensor"
             android:exported="true"
-            tools:ignore="ExtraText">
             android:theme="@style/Theme.NoTitleBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,7 +28,11 @@
         <activity
             android:name=".AboutActivity"
             android:exported="false">
+        </activity>
 
+        <activity
+            android:name=".ResultActivity"
+            android:exported="false">
         </activity>
 
     </application>
