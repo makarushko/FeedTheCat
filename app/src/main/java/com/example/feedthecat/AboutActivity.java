@@ -17,7 +17,6 @@ public class AboutActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setTitle("About developer");
         setContentView(R.layout.activity_about);
-
     }
 
     @SuppressLint("NonConstantResourceId")
