@@ -20,15 +20,13 @@ public class MenuActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         getSupportActionBar().setTitle("Feed The Cat");
-
         setContentView(R.layout.activity_menu);
 
     }
 
     public void authPressed(View view){
-        Intent intent = new Intent(getApplicationContext(), UserActivity.class);
+        Intent intent = new Intent(this, GameActivity.class);
         startActivity(intent);
     }
 
@@ -43,25 +41,6 @@ public class MenuActivity extends AppCompatActivity {
     }
 
     public void exitPressed(View view) {
-        GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);
-        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestEmail()
-                .build();
-
-        GoogleSignInClient mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
-        if (acct != null) {
-
-
-            mGoogleSignInClient.signOut()
-                    .addOnCompleteListener(this, new OnCompleteListener<Void>() {
-                        @Override
-                        public void onComplete(@NonNull Task<Void> task) {
-                            //Toast.makeText(MenuActivity.this, "Signed out", Toast.LENGTH_LONG).show();
-                            finishAffinity();
-                        }
-                    });
-        }else{
-            finishAffinity();
-        }
+        finishAffinity();
     }
 }

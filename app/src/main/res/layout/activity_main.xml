@@ -9,16 +9,16 @@
 
     <ImageView
         android:id="@+id/cat"
-        android:layout_width="218dp"
-        android:layout_height="177dp"
+        android:layout_width="331dp"
+        android:layout_height="307dp"
         android:layout_marginTop="285dp"
         android:layout_marginBottom="90dp"
         app:layout_constraintBottom_toTopOf="@+id/progressbar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.804"
+        app:layout_constraintVertical_bias="0.585"
         app:layout_constraintVertical_chainStyle="spread"
         app:srcCompat="@drawable/cat" />
 
@@ -35,10 +35,10 @@
         android:outlineAmbientShadowColor="@color/purple_200"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintHorizontal_bias="0.537"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.829" />
+        app:layout_constraintVertical_bias="0.806" />
 
     <TextView
         android:id="@+id/LoadingCompleteTextView"
@@ -46,12 +46,24 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/progressbar"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="472dp"
+        android:layout_marginTop="550dp"
         android:text="Loading Complete"
         android:textSize="24sp"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:text="Hi, I'm hungry.."
+        android:textSize="@dimen/size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

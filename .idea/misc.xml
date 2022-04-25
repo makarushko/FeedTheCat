@@ -5,10 +5,11 @@
       <map>
         <entry key="..\:/Users/Anna/AndroidStudioProjects/FeedTheCat/app/src/main/res/drawable/animation.xml" value="0.104" />
         <entry key="..\:/Users/Anna/AndroidStudioProjects/FeedTheCat/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.1615" />
+        <entry key="..\:/Users/Anna/AndroidStudioProjects/FeedTheCat/app/src/main/res/layout-v28/activity_main.xml" value="0.15416666666666667" />
         <entry key="..\:/Users/Anna/AndroidStudioProjects/FeedTheCat/app/src/main/res/layout/activity_about.xml" value="0.144" />
-        <entry key="..\:/Users/Anna/AndroidStudioProjects/FeedTheCat/app/src/main/res/layout/activity_game.xml" value="0.152" />
-        <entry key="..\:/Users/Anna/AndroidStudioProjects/FeedTheCat/app/src/main/res/layout/activity_google.xml" value="0.176" />
-        <entry key="..\:/Users/Anna/AndroidStudioProjects/FeedTheCat/app/src/main/res/layout/activity_main.xml" value="0.1334853090172239" />
+        <entry key="..\:/Users/Anna/AndroidStudioProjects/FeedTheCat/app/src/main/res/layout/activity_game.xml" value="0.19655797101449277" />
+        <entry key="..\:/Users/Anna/AndroidStudioProjects/FeedTheCat/app/src/main/res/layout/activity_google.xml" value="0.1" />
+        <entry key="..\:/Users/Anna/AndroidStudioProjects/FeedTheCat/app/src/main/res/layout/activity_main.xml" value="0.14673913043478262" />
         <entry key="..\:/Users/Anna/AndroidStudioProjects/FeedTheCat/app/src/main/res/layout/activity_menu.xml" value="0.1" />
         <entry key="..\:/Users/Anna/AndroidStudioProjects/FeedTheCat/app/src/main/res/layout/activity_result.xml" value="0.264" />
         <entry key="..\:/Users/Anna/AndroidStudioProjects/FeedTheCat/app/src/main/res/layout/activity_user.xml" value="0.2726449275362319" />

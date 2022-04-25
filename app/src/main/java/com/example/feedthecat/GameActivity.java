@@ -36,11 +36,9 @@ public class GameActivity extends AppCompatActivity {
 
     private TextView satiety_textView;
     private int clicks = 0;
-    private String personName;
     private ImageView imageView;
     AnimationDrawable frameAnimation;
 
-    private TextView name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,13 +51,6 @@ public class GameActivity extends AppCompatActivity {
         imageView=findViewById(R.id.cat);
         imageView.setBackgroundResource(R.drawable.animation);
         frameAnimation = (AnimationDrawable) imageView.getBackground();
-        name = findViewById(R.id.name);
-        GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);
-        if (acct != null) {
-            personName = acct.getDisplayName();
-            name.setText(personName);
-        }
-
     }
 
     @SuppressLint("NonConstantResourceId")
@@ -82,14 +73,51 @@ public class GameActivity extends AppCompatActivity {
                 frameAnimation.setVisible(true,true);
                 frameAnimation.start();
             }
-            GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);
-
-
         }
         else if(frameAnimation.isRunning()){
             frameAnimation.setVisible(false,false);
             frameAnimation.stop();
         }
+    }
+
+
+
+    public void shareClick(View view){
+        String count = String.valueOf(clicks);
+        Intent shareIntent = new Intent(Intent.ACTION_SEND);
+        shareIntent.setType("text/plain");
+        String shareRes = "My result in FeedTheCat: " + count;
+
+        shareIntent.putExtra(Intent.EXTRA_TEXT,shareRes);
+        startActivity(Intent.createChooser(shareIntent,"SHARE"));
+
+    }
+
+    public void writeFile(String filename,String text) {
+        try {
+            BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(
+                    openFileOutput(filename, MODE_APPEND)));
+            bw.write(text);
+            bw.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void saveScore(View view){
+        Date date = new Date();
+        @SuppressLint("SimpleDateFormat") SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+        String format = formatter.format(date);
+        writeFile("results",format+"|" + clicks+"\n");
+        showToast(view,"Result save!");
+    }
+
+    public void showToast(View view, String text) {
+        Toast toast = Toast.makeText(getApplicationContext(),
+                text,
+                Toast.LENGTH_SHORT);
+        toast.setGravity(Gravity.CENTER, 0, 0);
+        toast.show();
     }
 
 }

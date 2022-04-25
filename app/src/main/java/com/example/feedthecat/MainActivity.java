@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         mProgressBar = findViewById(R.id.progressbar);
         mLoadingText = findViewById(R.id.LoadingCompleteTextView);
         mProgressBar.getProgressDrawable().setColorFilter(
-                Color.rgb(186,134,252), android.graphics.PorterDuff.Mode.SRC_IN);
+                Color.rgb(255,128,0), android.graphics.PorterDuff.Mode.SRC_IN);
         new Thread(new Runnable() {
             @Override
             public void run() {
