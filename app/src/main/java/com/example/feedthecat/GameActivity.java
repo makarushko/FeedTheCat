@@ -71,6 +71,7 @@ public class GameActivity extends AppCompatActivity {
         if (clicks % 15 == 0) {
             if(!frameAnimation.isRunning()) {
                 frameAnimation.setVisible(true,true);
+                imageView.setImageDrawable(null);
                 frameAnimation.start();
             }
         }

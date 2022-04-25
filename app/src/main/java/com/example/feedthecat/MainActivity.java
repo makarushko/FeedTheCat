@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Handler;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -32,23 +33,23 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 while (mProgressStatus < 100){
                     mProgressStatus++;
-                    android.os.SystemClock.sleep(50);
-                    mHandler.post(new Runnable() {
-                        @Override
-                        public void run() {
-                            mProgressBar.setProgress(mProgressStatus);
-                            Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
-                            startActivity(intent);
-                        }
-                    });
+                    android.os.SystemClock.sleep(20);
+                    mProgressBar.setProgress(mProgressStatus);
+
                 }
-                mHandler.post(new Runnable() {
-                    @Override
-                    public void run() {
-                        mLoadingText.setVisibility(View.VISIBLE);
-                    }
-                });
+                //mHandler.post(new Runnable() {
+                    //@Override
+                    //public void run() {
+                //mLoadingText.setVisibility(View.VISIBLE);
+                try {
+                    Log.d("mylog", "e.getMessage()");
+                Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
+                startActivity(intent);
+                } catch (Exception e) {
+                    Log.d("mylog", e.getMessage());
+                }
             }
         }).start();
+
     }
 }
